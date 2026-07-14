@@ -6,7 +6,7 @@ from student_service import *
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI
+app = FastAPI()
 
 @app.get("/")
 def handle_check():
